@@ -1,0 +1,7 @@
+digraph BST {
+    node [fontname="Arial", shape=circle, style=filled, fillcolor=red];
+    5 -> 4;
+    4 -> 2;
+    2 -> 1;
+    5 -> 6;
+}
