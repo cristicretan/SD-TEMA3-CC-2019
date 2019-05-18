@@ -49,18 +49,21 @@ multiset that would behave just like a heap.
 # Taking each task individually
 ### Problem 1
 * Task 1
+
 For this task I had to determine the number of different productions from each
 graph created. Fairly easy to see what this wants me to do is to find the
 number of connected components. To do this, we start a depth-first search(DFS)
 from each non-visited node, and everytime we start another DFS we add 1 to the
 answer.
 * Task 2
+
 For this task I had to determine the degree of kinship between 2 actors, which
 is nothing more than the shortest path in a unweighted, undirected graph, I
 could use other algorithms too, but I chose to use breadth-first search since
 it is enought for this task, starting from any of the actors id's, we could
 find the minimum distance to the other actor and return it.
 * Task3
+
 This tasks asks me straight-forward to determine the cut vertices of the graph.
 This can be accomplished easily with a fairly modified depth-first search, at
 each point in time, to keep the discovery time of the node and it's low time.
@@ -68,6 +71,7 @@ It's low time represents the lowers on the DFS-tree a vertex is without
 having a back-edge. Like this we determine the cut vertices and we insert them
 in a new binary tree and thus we can easily sort the output lexicographically.
 * Bonus
+
 For the bonus task, I used the Bron-Kerbosch algorithm to determine the
 maximal clique which is nothing but a complete subgraph of the given graph, it
 just has to be maximal. I used binary trees in this task, too, again for fast
@@ -125,17 +129,20 @@ ordonat care ar actiona exact ca un heap.
 # Luand fiecare cerinta in parte
 ### Problema 1
 * Cerinta 1
+
 Pentru aceasta cerinta, a trebuit sa determin numarul de distributii diferite
 de actori in graful creat. Ne dam usor seama ca intrebarea este de fapt sa
 determinam numarul de componente conexe din graf. Putem obtina asta pornind un
 dfs din fiecare nod nevizitat si la fiecare pornire sa adaugam 1 la un contor.
 * Cerinta 2
+
 Pentru aceasta cerinta a trebuit sa determin gradul de inrudire dintre 2 actori
 ceea ce nu e nimic altceva decat cel mai scurt drum intre 2 noduri intr-un graf
 neorientat si fara costuri. Pentru obtinerea acestui rezultat putem aplica o
 parcugere in latime pornind din oricare id corespondent cu numele actorilor si
 afisand distanta obtinuta.
 * Cerinta 3
+
 Aceasta cerinta, ne spune direct sa aflam cate puncte de articulatie exista in
 graful creat si care sunt acestea si sa le afisam in ordine lexicografica.
 Utilizand arborii binari de cautare pe numele actorilor si un dfs schimbat unde
@@ -143,6 +150,7 @@ sa retinem timpul de descoperire al unui nod si "low"-ul acesta, adica cel mai j
 nivel la care poate ajunge un nod (in arborele DFS) fara ca acesta sa aiba 
 muchie de intoarcere, putem afla cu usurinta punctele de articulatie.
 * Bonus
+
 Pentru cerinta bonus, am folosit algoritmul Bron-Kerbosch pentru a determina
 clica maximala, ceea ce nu este altceva decat un subgraf complet maximal in
 graful initial. De asemenea, si aici am folosit arbori binari de cautare pentru
